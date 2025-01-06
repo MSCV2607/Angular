@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myfirstApp": {
+    "myFirstApp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/myfirst-app",
+            "outputPath": "dist/my-first-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myfirstApp:build:production"
+              "buildTarget": "myFirstApp:build:production"
             },
             "development": {
-              "buildTarget": "myfirstApp:build:development"
+              "buildTarget": "myFirstApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "myfirstApp:build"
+            "buildTarget": "myFirstApp:build"
           }
         },
         "test": {
@@ -98,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "042b0484-545e-421d-865f-8222de0107a5"
+    "analytics": false
   }
 }
