@@ -3,11 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-empleado',
   //In line template
-  template: `
+  /* template: `
     <p>empleado works!</p>
-  `,
-  //styleUrl: './empleado.component.css'
+  `, */
+  //External template
+  templateUrl: './empleado.component.html',
 
+  //styleUrl: './empleado.component.css'
   //In line styles
   styles: [`
     p {
@@ -16,5 +18,13 @@ import { Component } from '@angular/core';
   `]
 })
 export class EmpleadoComponent {
+  nombre = 'Juan';
+  apellido = 'Perez';
+  private edad = 28;
+  empresa = 'Micros';
 
+  //metodo getter de edad
+  getEdad() {
+    return this.edad;
+  }
 }

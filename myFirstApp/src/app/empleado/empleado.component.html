@@ -1,1 +1,9 @@
-<p>Aca va un empleado</p>
+
+<!-- Texto dinamico es el que estan encerrado ente {{}} -->
+<p>Nombre del empleado: {{nombre}}</p>
+<p>Apellido del empleado: {{apellido}}</p>
+<!-- Con la interpolación se puede realizar operaciones -->
+<p>Edad del empleado: {{getEdad() + 10}}</p>
+<p>Edad del empleado: {{getEdad() < 18 ? "Menor de edad":"Mayor de edad"}}</p>
+<p>Empresa del empleado: {{empresa}}</p>
+
