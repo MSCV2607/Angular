@@ -21,10 +21,14 @@ export class EmpleadoComponent {
   nombre = 'Juan';
   apellido = 'Perez';
   private edad = 28;
-  empresa = 'Micros';
+  //empresa = 'Micros';
 
   //metodo getter de edad
   getEdad() {
     return this.edad;
+  }
+
+  llamaEmpresa(value: string) {
+  
   }
 }
