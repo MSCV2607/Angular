@@ -8,8 +8,16 @@
 <p>Edad del empleado: {{getEdad() < 18 ? "Menor de edad":"Mayor de edad"}}</p>
 <p>Empresa del empleado: {{empresa.value}}</p>
 
-Introduce la empresa: <input type="text" #empresa (keyup)="0"/>
+<input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro" />
+
 
 <br />
 <!-- Boton para cambiar la empresa -->
 <!-- <input type="button" value="Cambiar" (click)="llamaEmpresa(empresa.value)"/> -->
+
+<br>
+<br>
+
+Registrado: <input type="checkbox" id="Registrado" [checked]="usuRegistado"/>
+
+{{getRegistroUsuario()}}

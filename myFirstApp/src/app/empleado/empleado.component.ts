@@ -31,4 +31,14 @@ export class EmpleadoComponent {
   llamaEmpresa(value: string) {
   
   }
+
+  //Binding de propiedades probado con cuadro txt de el html
+  habilitacionCuadro = true;
+
+  usuRegistado = false;
+
+  getRegistroUsuario() {
+    this.usuRegistado = true;
+  }
+
 }
