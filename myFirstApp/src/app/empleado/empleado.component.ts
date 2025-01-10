@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import e from 'express';
 
 @Component({
   selector: 'app-empleado',
@@ -37,8 +38,24 @@ export class EmpleadoComponent {
 
   usuRegistado = false;
 
+  //Property Binding
   getRegistroUsuario() {
-    this.usuRegistado = true;
+    this.usuRegistado = false;
   }
+
+  //Event Binding
+  setusuarioRegistrado(event:Event) {
+    //Para abrir una ventana emergente usamos alert
+    //alert ('El usuario se acaba de registrar');
+    //this.textoDeRegistro = 'El usuario se acaba de registrar';
+
+    if((<HTMLInputElement>event.target).value == 'si'){
+      this.textoDeRegistro = "El usuario se acab de registrar";
+    } else {
+      this.textoDeRegistro = "No hay nadie registrado";
+    }
+  }
+
+  textoDeRegistro = 'No hay nadie registrado';
 
 }
