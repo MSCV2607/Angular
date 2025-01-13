@@ -22,7 +22,10 @@ export class EmpleadoComponent {
   nombre = 'Juan';
   apellido = 'Perez';
   private edad = 28;
-  //empresa = 'Micros';
+  empresa = "google";
+
+  //binding bidireccional
+  
 
   //metodo getter de edad
   getEdad() {
@@ -34,7 +37,7 @@ export class EmpleadoComponent {
   }
 
   //Binding de propiedades probado con cuadro txt de el html
-  habilitacionCuadro = true;
+  habilitacionCuadro = false;
 
   usuRegistado = false;
 

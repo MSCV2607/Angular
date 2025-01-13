@@ -6,10 +6,12 @@
 <p>Edad del empleado: {{getEdad() + 10}}</p>
 <!-- Con la interpolación se puede usar operadores ternarios -->
 <p>Edad del empleado: {{getEdad() < 18 ? "Menor de edad":"Mayor de edad"}}</p>
-<p>Empresa del empleado: {{empresa.value}}</p>
+<p>Empresa del empleado: {{empresa}}</p>
 
-<input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro" />
+<!-- <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro" /> -->
 
+<!-- binding bidireccional con Banana In Box-->
+Introduce la empresa: <input type = "text" [(ngModel)]="empresa" />
 
 <br />
 <!-- Boton para cambiar la empresa -->
@@ -24,5 +26,8 @@
 Registrado: <input type="radio" value="si" name="nRegistro" id="Registrado" [checked]="usuRegistado" (click)="setusuarioRegistrado($event)"/>
 <br>
 No Registrado: <input type="radio" value="no" name="nRegistro" (click)="setusuarioRegistrado($event)"/>
+
+
+
 
 {{getRegistroUsuario()}}
