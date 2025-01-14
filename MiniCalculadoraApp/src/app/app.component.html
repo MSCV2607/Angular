@@ -1,11 +1,25 @@
-<h1>{{title}}</h1>
+<h1 class="text-center my-4">{{title}}</h1>
 
-<form action="">
-  Numero 1: <input type="text" [(ngModel)]="NumA" name="NumA"> <br> <br>
+<div class="container border p-4 mt-4 rounded shadow-sm">
 
-  Numero 2: <input type="text" [(ngModel)]="NumB" name="NumB"> <br> <br>
+  <form>
+    <div class="mb-3">
+      <label for="numA" class="form-label">Número 1:</label>
+      <input type="number" [(ngModel)]="NumA" name="NumA" id="numA" class="form-control">
+    </div>
 
-  <input type="submit" value="Sumar">
-</form>
+    <div class="mb-3">
+      <label for="numB" class="form-label">Número 2:</label>
+      <input type="number" [(ngModel)]="NumB" name="NumB" id="numB" class="form-control">
+    </div>
 
-<p>Resultado: {{Resultado}}</p>
+    <!-- Contenedor centrado para los botones -->
+    <div class="text-center">
+      <button type="button" (click)="sumar()" class="btn btn-success mx-2">Sumar</button>
+      <button type="button" (click)="restar()" class="btn btn-danger mx-2">Restar</button>
+    </div>
+  </form>
+
+</div>
+
+<p class="mt-4 fs-4 text-center">Resultado: <strong>{{Resultado}}</strong></p>
