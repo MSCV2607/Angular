@@ -1,0 +1,14 @@
+<h1 style="text-align: center;">{{titulo}}</h1>
+
+<form>
+  <input type="text" name = "nombre" [(ngModel)]="nombre"> <br>
+  <input type="text" name = "apellido" [(ngModel)]="apellido"> <br>
+
+
+  <input type="submit" value="Registrar" (click)="registrarUsuario()"> <br>
+</form>
+
+<br>
+
+<!-- Si tegistrado es igual a ture muestra el "mensaje"-->
+<p *ngIf="registrado">{{mensaje}} con el nombre de {{nombre}} {{apellido}}</p>
