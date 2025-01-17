@@ -11,4 +11,19 @@
 <br>
 
 <!-- Si tegistrado es igual a ture muestra el "mensaje"-->
-<p *ngIf="registrado">{{mensaje}} con el nombre de {{nombre}} {{apellido}}</p>
+ <!-- Agregamos un else si no hay nadie "registrado" ira al ng-template #sinRegistrar-->
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}</p>
+
+<ng-template #sinRegistrar>
+  <p>Nadie registrado</p>
+</ng-template>
+
+<br> <br> <br> <br>
+
+<ul>
+
+  <li *ngFor="let entrada of entradas">
+    {{entrada.nombre}}
+  </li>
+
+</ul>
