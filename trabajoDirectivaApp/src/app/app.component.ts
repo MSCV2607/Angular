@@ -26,3 +26,4 @@ export class AppComponent {
     this.mensaje = 'Usuario registrado';
   }
 }
+
