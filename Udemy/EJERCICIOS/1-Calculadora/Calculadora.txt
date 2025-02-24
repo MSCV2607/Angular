@@ -1,0 +1,3 @@
+Aplicación de Calculadora en Angular
+
+Vamos a crear una aplicación de calculadora en Angular, similar a la que se muestra en la imagen que proporcionaste. Utilizaremos Bootstrap 5 para el diseño, componentes standalone, y two-way data binding para manejar la entrada y salida de datos.
