@@ -1,12 +1,21 @@
-
+<!-- Contenedor principal con clases de Bootstrap para centrar el contenido -->
 <div class="container text-center">
+
+    <!-- Contenedor flexible para alinear los botones horizontalmente -->
     <div class="d-flex justify-content-center mt-3">
+        <!-- Botón para mostrar el mensaje, llama al método mostrarMensaje() del componente -->
         <button class="btn btn-primary me-2" (click)="mostrarMensaje()">
             Mostrar mensaje
         </button>
-        <button class="btn btn-danger" (click)="resetearMensaje()">Resetear mensaje</button>
+
+        <!-- Botón para resetear el mensaje, llama al método resetearMensaje() del componente -->
+        <button class="btn btn-danger" (click)="resetearMensaje()">
+            Resetear mensaje
+        </button>
     </div>
+
+    <!-- Div que muestra el mensaje con estilos de alerta de Bootstrap -->
     <div class="alert alert-success mt-4 mx-auto w-50">
-        {{mensaje}}
+        {{mensaje}} <!-- Se muestra el valor de la variable 'mensaje' del componente -->
     </div>
 </div>

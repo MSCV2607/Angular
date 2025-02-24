@@ -7,14 +7,24 @@ import { Component } from '@angular/core';
   templateUrl: './mostrar-mensaje.component.html',
   styleUrl: './mostrar-mensaje.component.css'
 })
+
 export class MostrarMensajeComponent {
-mensaje: String = "";
+  /**
+   * Variable `mensaje` utilizada para almacenar y mostrar un mensaje en la plantilla.
+   */
+  mensaje: String = "";
 
-resetearMensaje() {
- this.mensaje = "";
-}
-mostrarMensaje() {
-  this.mensaje = "Hola hiciste clic en el boton";
-}
+  /**
+   * Método para resetear el mensaje, estableciéndolo como una cadena vacía.
+   */
+  resetearMensaje() {
+    this.mensaje = "";
+  }
 
+  /**
+   * Método para actualizar el mensaje con un texto predefinido cuando el usuario hace clic en un botón.
+   */
+  mostrarMensaje() {
+    this.mensaje = "Hola hiciste clic en el boton";
+  }
 }
