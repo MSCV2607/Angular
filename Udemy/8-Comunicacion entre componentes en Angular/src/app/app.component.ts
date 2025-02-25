@@ -4,7 +4,7 @@ import { NuevoComponenteComponent } from "./nuevo-componente/nuevo-componente.co
 import { ComponenteEnLineaComponent } from "./componente-en-linea/componente-en-linea.component";
 import { InterpolacionComponent } from "./interpolacion/interpolacion.component";
 import { PadreComponent } from './padre/padre.component';
-import { HijoComponent } from "./hijo/hijo.component";
+
 import { MostrarMensajeComponent } from "./mostrar-mensaje/mostrar-mensaje.component";
 import { ReplicadorComponent } from "./replicador/replicador.component";
 import { SaludarComponent } from "./saludar/saludar.component";
@@ -15,10 +15,10 @@ import { ComponenteForComponent } from "./componente-for/componente-for.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  titulo = 'Directiva @for en Angular';
+  titulo = 'Decorador';
 }
