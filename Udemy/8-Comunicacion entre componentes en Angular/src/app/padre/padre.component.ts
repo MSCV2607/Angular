@@ -10,5 +10,11 @@ import { HijoComponent } from "./hijo/hijo.component";
 })
 export class PadreComponent {
 
-  mensajePadre: string = "mensaje desde el componente Padre";
+  mensaje: string = '';
+
+  //Se emite una cadeba que recibimos del componente hijo
+recibirNotificacion(mensaje: string) {
+this.mensaje = mensaje;
+}
+
 }
