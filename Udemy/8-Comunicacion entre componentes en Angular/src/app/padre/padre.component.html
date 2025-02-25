@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="container">
     <h3 class="text-primary">Componente Padre</h3>
     <app-hijo (notificarPadre)="recibirNotificacion($event)"></app-hijo>
@@ -8,4 +8,14 @@
             {{mensaje}}
         </p>
     }
+</div> -->
+
+<div class="container">
+<h3 class="text-primary">
+Compoente Padre
+</h3>
+<app-hijo></app-hijo>
+<button class="btn btn-primary mt-3" (click)="cambiarMensajeHijo()">
+Cambiar mensaje Hijo
+</button>
 </div>
