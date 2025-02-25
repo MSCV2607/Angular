@@ -22,6 +22,7 @@ export class TiendaOnlineComponent {
   precioInput: number = 0;
 
   agregarProducto() {
+    //Validacion
     if (this.descripcionInput.trim() === '' || this.precioInput <= 0) {
       alert('Por favor ingrese una descripción y un precio válido.');
       return;
@@ -36,6 +37,7 @@ export class TiendaOnlineComponent {
 }
 
 // Clase Producto
+//PUEDO PONERLO APARTE EN UN ARCHIVO PRODUCTO.TS
 export class Producto {
   constructor(public descripcion: string, public precio: number) {}
 }
