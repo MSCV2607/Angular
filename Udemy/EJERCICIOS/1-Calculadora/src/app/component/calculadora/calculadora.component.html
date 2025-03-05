@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center">
             <div class="w-25">
                 <app-formulario (resultadoSuma)="procesarResultado($event)" />
-                <p class="text-center">Resultado: {{ resultado }}</p>
+                <app-resultado [resultadoHijo]="resultadoPadre" />
             </div>
         </div>
     </div>
