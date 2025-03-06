@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FormularioComponent } from "../formulario/formulario.component";
 
 @Component({
   selector: 'app-tienda-online',
   standalone: true,
-  imports: [CommonModule, FormsModule], 
+  imports: [CommonModule, FormsModule, FormularioComponent], 
   templateUrl: './tienda-online.component.html',
   styleUrl: './tienda-online.component.css'
 })
